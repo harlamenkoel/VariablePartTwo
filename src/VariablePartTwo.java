@@ -69,5 +69,15 @@ public class VariablePartTwo {
         int recipe = (bananaWeight * 5) + (milkWeight * 2) + (iceCreamWeight * 2) + (eggWeight * 4);
         int pound = 1000;
         System.out.println("Вес спортивного питания: " + recipe / pound + " кг " + recipe % pound + " гр.");
+
+        System.out.println("Задача 7");
+        int excessWeight = 7;
+        int gramsKilogram = 1000;
+        int droppingWeight1 = excessWeight * gramsKilogram / 250;
+        int droppingWeight2 = excessWeight * gramsKilogram / 500;
+        int droppingWeight3 = excessWeight * gramsKilogram / ((500+250)/2);
+        System.out.println("Если терять по 250 гр. в день то 7 кг сбросяться через " + droppingWeight1+" дней");
+        System.out.println("Если терять по 500 гр. в день то 7 кг сбросяться через " + droppingWeight2+" дней");
+        System.out.println("В среднем можно похудеть за " + droppingWeight3+" дней, если брать среднее значение сбрасывания веса в день 375 гр.");
     }
 }
