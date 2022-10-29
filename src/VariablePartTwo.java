@@ -49,11 +49,16 @@ public class VariablePartTwo {
         int bottlesPerThreeDay = bottlesPerDay * 3;
         int bottlesPerMonth = bottlesPerThreeDay * 10;
         System.out.println("За 20 минут работы машины произвела бутылок " + bottlesPerOneThird + " штук");
-        System.out.println("За сутки работы машины произвела бутылок " + bottlesPerDay + " штук")
-        ;
+        System.out.println("За сутки работы машины произвела бутылок " + bottlesPerDay + " штук");
         System.out.println("За 3 суток работы машины произвела бутылок " + bottlesPerThreeDay + " штук");
         System.out.println("За месяц работы машины произвела бутылок " + bottlesPerMonth + " штук");
 
-
+        System.out.println("Задача 5");
+        byte paintCans = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        int classes = paintCans / (whitePaintPerClass + brownPaintPerClass);
+        System.out.println("В школе, где " + classes + " классов, нужно " + whitePaintPerClass * classes +
+                " банок белой краски и " + brownPaintPerClass * classes + " банок коричневой краски");
     }
 }
