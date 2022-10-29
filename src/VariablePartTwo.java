@@ -75,9 +75,26 @@ public class VariablePartTwo {
         int gramsKilogram = 1000;
         int droppingWeight1 = excessWeight * gramsKilogram / 250;
         int droppingWeight2 = excessWeight * gramsKilogram / 500;
-        int droppingWeight3 = excessWeight * gramsKilogram / ((500+250)/2);
-        System.out.println("Если терять по 250 гр. в день то 7 кг сбросяться через " + droppingWeight1+" дней");
-        System.out.println("Если терять по 500 гр. в день то 7 кг сбросяться через " + droppingWeight2+" дней");
-        System.out.println("В среднем можно похудеть за " + droppingWeight3+" дней, если брать среднее значение сбрасывания веса в день 375 гр.");
+        int droppingWeight3 = excessWeight * gramsKilogram / ((500 + 250) / 2);
+        System.out.println("Если терять по 250 гр. в день то 7 кг сбросяться через " + droppingWeight1 + " дней");
+        System.out.println("Если терять по 500 гр. в день то 7 кг сбросяться через " + droppingWeight2 + " дней");
+        System.out.println("В среднем можно похудеть за " + droppingWeight3 + " дней, если брать среднее значение сбрасывания веса в день 375 гр.");
+
+        System.out.println("Задача 8");
+        long salaryEmployee1 = 67760L;
+        long salaryEmployee2 = 83690L;
+        long salaryEmployee3 = 76230L;
+        byte increaseSalary = 10;
+        byte monthInYear = 12;
+        byte percentSalary = 100;
+        long newSalaryEmployee1 = salaryEmployee1 + (salaryEmployee1 * increaseSalary / percentSalary);
+        long newSalaryEmployee2 = salaryEmployee2 + (salaryEmployee2 * increaseSalary / percentSalary);
+        long newSalaryEmployee3 = salaryEmployee3 + (salaryEmployee3 * increaseSalary / percentSalary);
+        System.out.println("Маша теперь получает " + newSalaryEmployee1 + " рублей." +
+                " Годовой доход вырос на " + ((newSalaryEmployee1 * monthInYear) - (salaryEmployee1 * monthInYear)) + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryEmployee2 + " рублей." +
+                " Годовой доход вырос на " + ((newSalaryEmployee2 * monthInYear) - (salaryEmployee2 * monthInYear)) + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryEmployee3 + " рублей." +
+                " Годовой доход вырос на " + ((newSalaryEmployee3 * monthInYear) - (salaryEmployee3 * monthInYear)) + " рублей");
     }
 }
