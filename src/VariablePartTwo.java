@@ -60,5 +60,14 @@ public class VariablePartTwo {
         int classes = paintCans / (whitePaintPerClass + brownPaintPerClass);
         System.out.println("В школе, где " + classes + " классов, нужно " + whitePaintPerClass * classes +
                 " банок белой краски и " + brownPaintPerClass * classes + " банок коричневой краски");
+
+        System.out.println("Задача 6");
+        byte bananaWeight = 80;
+        byte milkWeight = 105;
+        byte iceCreamWeight = 100;
+        byte eggWeight = 70;
+        int recipe = (bananaWeight * 5) + (milkWeight * 2) + (iceCreamWeight * 2) + (eggWeight * 4);
+        int pound = 1000;
+        System.out.println("Вес спортивного питания: " + recipe / pound + " кг " + recipe % pound + " гр.");
     }
 }
